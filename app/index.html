@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Wisdom Pet Medicine</title>
+  <link rel="stylesheet" href="css/app.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Weather PWA">
+  <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+  <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#2F3BA2">
+</head>
+<body>
+  <div class="loader">
+    <div class="loader-text">Loading...</div>
+    <div class="progress">
+      <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" style="width: 100%">
+        <span class="sr-only">45% Complete</span>
+      </div>
+    </div>
+  </div><!-- .loader -->
+<header>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#slideshow"><h1>Wisdom <span class="subhead">Pet Medicine</span></h1></a>
+      </div><!-- navbar-header -->
+      <div class="collapse navbar-collapse" id="collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#slideshow">Home</a></li>
+          <li><a href="#adoption">Adoption</a></li>
+          <li><a href="#appointments">Appointments</a></li>
+        </ul>
+      </div><!-- collapse navbar-collapse -->
+    </div><!-- container -->
+  </nav>
+  <script id="slideshow-template" type="text/x-handlebars-template">
+    <div class="carousel fade" data-ride="carousel" id="slideshow">
+      <div class="carousel-inner">
+        {{#each slideshow}}
+          {{#if @first}}
+            <div class="item active"><img src="images/pets/{{filename}}.jpg" alt="{{pet}} photo"></div>
+          {{else}}
+            <div class="item"><img src="images/pets/{{filename}}.jpg" alt="{{pet}} photo"></div>
+          {{/if}}
+        {{/each}}
+      </div><!-- carousel-inner -->
+
+      <a class="left carousel-control" href="#slideshow" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#slideshow" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div><!-- featured carousel -->
+  </script>
+  <div id="slideshow-content"></div>
+</header>
+
+<main class="main">
+  <div class="page" id="adoption">
+    <div class="container">
+      <h2 class="page-headline">Adoptions</h2>
+      <p class="page-description">These loving and deserving pets need a home. Please help us find a place for them. Click on their photo for more information.</p>
+      <script id="adoption-template" type="text/x-handlebars-template">
+        {{#each adoption}}
+          <div  class="col-md-2 col-sm-3 col-xs-4 openpetmodal" data-toggle="modal" data-target="#wisdompetmodal"
+            data-petname="{{pet}}" data-petbreed="{{breed}}" data-petowner="{{owner}}"
+            data-petinfo="{{description}}" data-petimage="{{filename}}">
+            <img class="img-circle" src="images/pets/{{filename}}_tn.jpg" alt="{{pet}} photo">
+          </div><!-- modal toggle -->
+        {{/each}}
+      </script>
+      <div id="adoption-content"></div>
+    </div><!-- content container -->
+  </div><!-- mission page -->
+
+  <div class="page" id="appointments">
+    <div class="container">
+      <h2 class="page-headline">Appointments</h2>
+      <p class="page-description">Here's the pets that came in this week for an appointment. Click on a Pet's photo for more info.</p>
+
+      <script id="appointments-template" type="text/x-handlebars-template">
+            {{#each appointments}}
+              <div class="appointment media openpetmodal" data-toggle="modal" data-target="#wisdompetmodal"
+                data-petname="{{pet}}" data-petbreed="{{breed}}" data-petowner="{{owner}}"
+                data-petinfo="{{reason}}" data-petimage="{{filename}}">
+                <div class="media-left media-top">
+                  <img class="media-object appointment-img img-rounded" src="images/pets/{{filename}}_tn.jpg" alt="{{pet}} pet photo">
+                </div><!-- media-left-top -->
+                <div class="media-body">
+                  <h3 class="media-heading appointment-heading">{{pet}}, <span class="appointment-breed">{{breed}}</span></h3>
+                  <div class="appointment-owner"><span class="appointment-owner-title">Owner:</span> <span class="appointment-owner-name">{{owner}}</span></div>
+                  <div class="appointment-reason">{{reason}}</div>
+                </div><!-- media-body -->
+              </div><!-- media -->
+            {{/each}}
+      </script>
+      <div id="appointments-content"></div>
+</main><!-- main -->
+
+<div class="modal fade" id="wisdompetmodal" tabindex="-1" role="dialog" aria-labelledby="petModal">
+  <div class="modal-dialog"  data-dismiss="modal" aria-label="Close" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h2 class="modal-title modal-petname"></h2>
+        <div class="modal-petbreed"></div>
+      </div><!-- modal-header -->
+      <div class="modal-body">
+        <img class="img-responsive modal-petimage">
+        <p class="modal-petinfo"></p>
+      </div><!-- modal-body -->
+    </div><!-- modal-content -->
+  </div><!-- modal-dialog -->
+</div><!-- modal-fade -->
+<script src="service-worker.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

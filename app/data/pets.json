@@ -1,0 +1,26 @@
+{
+  "slideshow":
+    [
+      { "pet": "Casper", "owner": "Dalania Devitto", "type": "Dog", "breed": "Bichon frise", "description": "Four-year-old Casper was rescued from a breeder when he was 2, and his owner takes great care in giving him a good life.", "reason": "This dog is coming in for a nail trim and grooming", "filename": "Casper-178870793"},
+      { "pet": "Chip", "owner": "Jason Hemlock", "type": "Fish", "breed": "Cichild", "description": "Chip is a vivacious 5-year-old African Cichlid with a bit of a temper towards other fish.", "reason": "This fish has a spotty white patch developing on his back ", "filename": "Chip-519252509"},
+      { "pet": "Nugget", "owner": "Darla Branson", "type": "Hamster", "breed": "Golden hamster", "description": "Nugget’s got his name because his owner’s daughter though he looked like a golden nugget when he was a baby.", "reason": "This little nugget has  a rash on his stomach area", "filename": "Nugget-499158128"}
+  ],
+
+"adoption":
+  [
+    { "pet": "Pepe", "owner": "Reggie Tupp", "type": "Rabbit", "breed": "Cinnamon rabbit", "description": "Six-month-old Pepe is very active and is always keeping his owners, and us, on our toes!", "reason": "It's time for this rabbit's post spaying surgery checkup", "filename": "Pepe-505301170"},
+    { "pet": "Nadalee", "owner": "Krystle Valerija", "type": "Dog", "breed": "Chihuahua", "description": "Nadalee is a 7-year-old long hair Chihuahua with a very pleasant, laid back, temperament.", "reason": "This dog is coming in for his monthly nail trim and grooming", "filename": "Nadalee-601919350"},
+    { "pet": "Zera", "owner": "Austin Finnagan", "type": "Iguana", "breed": "Cayman brac iguana", "description": "This iguana is on the endangered species list, and is thriving well in her owner’s home.", "reason": "This iguana's is showing signs of dementia associated with his old age", "filename": "Zera-599775030"},
+    { "pet": "Oddball", "owner": "Howie Cadell", "type": "Guinea pig", "breed": "American guinea pig", "description": "Oddball was the runt of his litter and has some breathing problems but is thriving well.", "reason": "Oddball has a hard lump on right front foot", "filename": "Oddball-534210612"},
+    { "pet": "Chyna", "owner": "Sandie Gobnet", "type": "Turtle", "breed": "Terrapin", "description": "Chyna got her name because she’s a gentle 13-year-old turtle with a tough shell.", "reason": "This turtle is coming in for a checkup and to be tested for Salmonella", "filename": "Chyna-545429720"},
+    { "pet": "Wesley", "owner": "Nathan Cayden", "type": "Dog", "breed": "Mixed breed", "description": "At 8 years old there isn’t anything Wesley can’t do, he’s very healthy and full of energy!", "reason": "This dog is returning for his next heartworm treatment visit", "filename": "Wesley-122458883"}
+  ],
+
+"appointments" :
+  [
+    { "pet": "Sami", "owner": "Maggie Rickland", "type": "Dog", "breed": "Dalmation", "description": "Sami is a very happy go lucky 1-year-old Dalmatian that loves to play.", "reason": "Sami has had some changes in his bathroom in habits", "filename": "Sami-163271312"},
+    { "pet": "Cosmo", "owner": "Jennifer Dawson", "type": "Bird", "breed": "Parrot", "description": "Cosmo is possibly the happiest parrot that lived, and loves to sing Happy Birthday to anyone that will listen.", "reason": "Cosmo's mom would like us to check for arthritic conditions and do a routine checkup", "filename": "Cosmo-481057312"},
+    { "pet": "Tibbs", "owner": "Shad Cayden", "type": "Dog", "breed": "Dachshund", "description": "Tibbs suffers from a spinal condition that can cause immobilization and his owner has to watch his activity levels.", "reason": "Tibbs has had an ongoing rash and cold symptoms and we are going to run allergy tests", "filename": "Tibbs-598156630"},
+    { "pet": "Stich", "owner": "Dennis Nicholback", "type": "Dog", "breed": "English pointer", "description": "Four-year-old Stich was born with a birth defect that required surgery at 6 weeks of age.", "reason": "Stich has been having some stomach issues and is due for his vaccinations", "filename": "Stich-56385517"}
+  ]
+}

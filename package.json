@@ -1,0 +1,31 @@
+{
+  "name": "progressive",
+  "version": "1.0.0",
+  "description": "Project for my Progressive Web Apps course on Lynda.com/LinkedIn Learning",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/planetoftheweb/progressive.git"
+  },
+  "author": "Ray Villalobos",
+  "devDependencies": {
+    "browserify": "^13.1.0",
+    "gulp": "^3.8.8",
+    "gulp-browserify": "^0.5.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-if": "^2.0.1",
+    "gulp-sourcemaps": "^2.2.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^2.2.20",
+    "gulp-webserver": "^0.8.8",
+    "jquery": "^3.1.1",
+    "sw-precache": "^4.2.1"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "handlebars": "^4.0.5"
+  }
+}
