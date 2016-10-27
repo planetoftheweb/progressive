@@ -1,4 +1,6 @@
 .DS_Store
 node_modules
 .tmp
+app/css/app.css
+app/js/app.js
 builds/development/images/**
