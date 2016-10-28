@@ -11,7 +11,6 @@
       height: 100vh;
       background: gray;
     }
-
   </style>
 </head>
 <body>
@@ -42,8 +41,23 @@
       </div><!-- navbar collapse -->
     </div><!-- navbar container -->
   </nav><!-- nav -->
+  <script id="slideshow-template" type="text/x-handlebars-template">
+    <div class="carousel fade" data-ride="carousel" id="slideshow">
+      <div class="carousel-inner">
+        {{#each slideshow}}
+          {{#if @first}}
+            <div class="item active"><img src="images/pets/{{filename}}.jpg" alt="{{pet}} photo"></div>
+          {{else}}
+            <div class="item"><img src="images/pets/{{filename}}.jpg" alt="{{pet}} photo"></div>
+          {{/if}}
+        {{/each}}
+      </div><!--carousel inner -->
+      <a class="left carousel-control" href="#slideshow" role="button" data-slide="prev"></a>
+      <a class="right carousel-control" href="#slideshow" role="button" data-slide="next"></a>
+    </div><!--carousel fade -->
+  </script>
+  <div id="slideshow-content"></div>
 </header>
-<div id="slideshow"></div>
 <main>
   <div class="page" id="adoption">
     <div class="container">
