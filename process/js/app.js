@@ -38,6 +38,15 @@ $(function() {
     }
   });
 
+  $(document).on('click', '.openpetmodal', function() {
+    $('.modal-petname').html($(this).data('petname'));
+    $('.modal-petbreed').html($(this).data('petbreed'));
+    $('.modal-petowner').html($(this).data('petowner'));
+    $('.modal-petinfo').html($(this).data('petinfo'));
+    $('.modal-petimage').attr('src', 'images/pets/' + $(this).data('petimage')+ 'jpg');
+    $('.modal-petimage').attr('alt', $(this).data('petname')+ ' photo');
+  });
+
   //Use smooth scrolling when clicking on navigation
   $('.navbar a').click(function() {
     if (location.pathname.replace(/^\//,'') ===
