@@ -9,8 +9,12 @@ $(function() {
     var slideshowTemplate = $('#slideshow-template').html();
     var slideshowScript = Handlebars.compile(slideshowTemplate);
 
+    var adoptionTemplate = $('#adoption-template').html();
+    var adoptionScript = Handlebars.compile(adoptionTemplate);
+
     $('.loader').fadeOut(1000);
     $('#slideshow-content').append(slideshowScript(data));
+    $('#adoption-content').append(adoptionScript(data));
 
     //replace IMG inside carousels with a background image
     $('#slideshow .item img').each(function() {
