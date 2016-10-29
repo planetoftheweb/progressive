@@ -76,7 +76,7 @@
         {{#each appointments}}
           <div class="appointment media openpetmodal" data-toggle="modal" data-target="#wisdompetmodal" data-petname="{{pet}}" data-petbreed="{{breed}}" data-petowner="{{owner}}" data-petinfo="{{reason}}" data-petimage="{{filename}}">
             <div class="media-left media-top">
-              <img class="media-object appointment-img img-rounded" src="images/pets{{filename}}_tn.jpg" alt="{{pet}} photo">
+              <img class="media-object appointment-img img-rounded" src="images/pets/{{filename}}_tn.jpg" alt="{{pet}} photo">
             </div><!-- media-left media-top -->
             <div class="media-body">
               <h3 class="media-heading appointments-heading">{{pet}}, <span class="appointment-breed">{{breed}}</span></h3>
@@ -86,6 +86,7 @@
           </div><!-- appointment media openpetmodal -->
         {{/each}}
       </script>
+      <div id="appointments-content"></div>
     </div><!-- container -->
   </div><!-- page-appointments -->
 </main>
