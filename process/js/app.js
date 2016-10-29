@@ -43,7 +43,7 @@ $(function() {
     $('.modal-petbreed').html($(this).data('petbreed'));
     $('.modal-petowner').html($(this).data('petowner'));
     $('.modal-petinfo').html($(this).data('petinfo'));
-    $('.modal-petimage').attr('src', 'images/pets/' + $(this).data('petimage')+ 'jpg');
+    $('.modal-petimage').attr('src', 'images/pets/' + $(this).data('petimage')+ '.jpg');
     $('.modal-petimage').attr('alt', $(this).data('petname')+ ' photo');
   });
 
