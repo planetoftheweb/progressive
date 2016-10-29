@@ -12,9 +12,13 @@ $(function() {
     var adoptionTemplate = $('#adoption-template').html();
     var adoptionScript = Handlebars.compile(adoptionTemplate);
 
+    var appointmentsTemplate = $('#appointments-template').html();
+    var appointmentsScript = Handlebars.compile(appointmentsTemplate);
+
     $('.loader').fadeOut(1000);
     $('#slideshow-content').append(slideshowScript(data));
     $('#adoption-content').append(adoptionScript(data));
+    $('#appointments-content').append(appointmentsScript(data));
 
     //replace IMG inside carousels with a background image
     $('#slideshow .item img').each(function() {
