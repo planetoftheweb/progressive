@@ -5,6 +5,14 @@ var Handlebars = require('handlebars');
 $(function() {
   var topoffset = 50;
 
+  if('serviceWorker' in navigator) {
+    navigator.serviceWorker
+      .register('./service-worker.js')
+      .then(function() {
+        console.log('Service Worker Active');
+      })
+  }
+
   $.getJSON('/data/pets.json', function(data) {
     var slideshowTemplate = $('#slideshow-template').html();
     var slideshowScript = Handlebars.compile(slideshowTemplate);
