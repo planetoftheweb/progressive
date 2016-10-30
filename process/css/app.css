@@ -326,3 +326,28 @@ header .inbody .navbar-brand span.subhead {
   width: 40%;
   max-width: 200px;
 }
+
+.reloadbtn {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.reloadbtn-lg {
+  width: 50px;
+  height: 50px;
+  display: none;
+  float: right;
+  padding: 9px 10px 9px 0;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .reloadbtn {
+    display: none;
+  }
+
+  .reloadbtn-lg {
+    display:inline;
+  }
+}
