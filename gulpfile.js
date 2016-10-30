@@ -16,10 +16,11 @@ var src = './process',
 
 gulp.task('generate-service-worker', function(callback) {
   swPrecache.write(path.join(dest, 'service-worker.js'), {
-    staticFileGlobs: [ dest + '**/.{js,html,json,css,png,jpg,gif,svg,eot,ttf,woff}'],
+    staticFileGlobs: [ dest + '/**/*.{js,html,json,css,png,jpg,gif,svg,eot,ttf,woff}'],
     stripPrefix: dest
   }, callback);
 });
+
 
 gulp.task('js', function() {
   return gulp.src(src + '/js/app.js')

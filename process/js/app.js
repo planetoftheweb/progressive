@@ -12,7 +12,7 @@ $(function() {
         console.log('Service Worker Active');
       })
   }
-
+  
   $.getJSON('/data/pets.json', function(data) {
     var slideshowTemplate = $('#slideshow-template').html();
     var slideshowScript = Handlebars.compile(slideshowTemplate);
