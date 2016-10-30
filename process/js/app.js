@@ -12,7 +12,7 @@ $(function() {
         console.log('Service Worker Active');
       })
   }
-  
+
   $.getJSON('/data/pets.json', function(data) {
     var slideshowTemplate = $('#slideshow-template').html();
     var slideshowScript = Handlebars.compile(slideshowTemplate);
@@ -39,6 +39,10 @@ $(function() {
     $('.carousel').carousel({
       pause: false
     });
+  });
+
+  $('.reload').click(function() {
+    window.location.reload();
   });
 
   $('.navbar-fixed-top').on('activate.bs.scrollspy', function() {
