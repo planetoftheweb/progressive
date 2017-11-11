@@ -1,7 +1,3 @@
-This is the repository for my course, Building a Progressive Web App on LinkedIn Learning and Lynda.com.
-
-tutorial, training, linkedinlearning, lynda, lynda-com, rayvillalobos
-
 # Building a Progressive Web App
 This is the repository for my course Building a Progressive Web App. The full course is available on [LinkedIn Learning](https://www.linkedin.com/learning/building-a-progressive-web-app?trk=insiders_6787408_learning) and [Lynda.com](https://www.lynda.com/CSS-tutorials/Building-Progressive-Web-App/518052-2.html)
 
